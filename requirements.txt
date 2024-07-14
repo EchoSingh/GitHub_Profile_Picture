@@ -1,4 +1,8 @@
 openai 
 requests 
-pillow 
+Pillow 
 python-dotenv
+diffusers
+transformers
+accelerate
+torch
