@@ -2,6 +2,8 @@
 
 Welcome to the GitHub Profile Picture Generator repository! This project allows you to create and customize your own profile picture for GitHub using OpenAI's tools and techniques.
 
+## Use the Link and generate images ..
+
 ## Files and Directories 📁
 
 - **outputs_generated**: Directory containing generated profile pictures.
