@@ -6,7 +6,7 @@ Welcome to the GitHub Profile Picture Generator repository! This project allows 
 - Lowest Quality Images : (main_SDX.py)
 - Its best if u use API as it give initial 25 credits (main.py).
 - Using CPU for generating so your image may not as good as expected using link (app.py)
-- [RUNNING LINK](https://huggingface.co/spaces/adi2606/Profile_Pic_Generator) (using now model : controlnet-union-sdxl-1.0)
+- [RUNNING LINK](https://huggingface.co/spaces/adi2606/Profile_Pic_Generator) (using now model : stabilityai/sdxl-turbo )
 
 ## Files and Directories 📁
 
