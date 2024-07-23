@@ -46,7 +46,7 @@ input_text = st.text_area("Describe your GitHub profile picture:",
 
 details_checkbox = st.checkbox("Generate Details?", value=True)
 steps_slider = st.slider("Number of Iterations", min_value=1, max_value=5, value=2, step=1)
-seed_slider = st.slider("Seed", min_value=0, max_value=999999999999999999, value=398231747038484200, step=1)
+seed_slider = st.slider("Seed", min_value=0, max_value=9007199254740991, value=398231747038484200, step=1)
 cuda_checkbox = st.checkbox("Use CUDA?", value=False)
 
 if st.button("Generate Image"):
