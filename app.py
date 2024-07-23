@@ -3,12 +3,12 @@ from diffusers import DiffusionPipeline
 import torch
 import os
 
-# Load Stable Diffusion model
+# Load Diffusion model
 @st.cache_resource
 def load_model():
     model_id = "xinsir/controlnet-union-sdxl-1.0"
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    pipe = StableDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float16 if device == "cuda" else torch.float32)
+    pipe = DiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float16 if device == "cuda" else torch.float32)
     pipe.to(device)
     return pipe
 
