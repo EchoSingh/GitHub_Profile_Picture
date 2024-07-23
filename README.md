@@ -101,6 +101,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - Thanks to all the contributors who have helped in improving this project.
 - Special thanks to the open source community for their continuous support and inspiration.
 
+## Support ⭐
+- If you like this project, please give it a star on GitHub! Your support is appreciated and helps to keep the project growing.
 ---
-
 Made with ❤️ by Aditya
