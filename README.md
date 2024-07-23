@@ -5,7 +5,7 @@ Welcome to the GitHub Profile Picture Generator repository! This project allows 
 ## Use the Link and generate images ..
 - Its best if u use API as it give initial 25 credits (main.py).
 - Using CPU for generating so your image may not as good as expected using link (app.py)
-- [RUNNING LINK](https://huggingface.co/spaces/adi2606/Profile_Pic_Generator)
+- [RUNNING LINK](https://huggingface.co/spaces/adi2606/Profile_Pic_Generator) (using now model : controlnet-union-sdxl-1.0)
 
 ## Files and Directories 📁
 
