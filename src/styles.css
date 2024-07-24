@@ -1,0 +1,86 @@
+/* Background color */
+body {
+    background-color: #f0f8ff; 
+}
+
+/* Header styling */
+.header {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    color: #1e3d59; /* Dark blue color */
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Content styling */
+.content {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    color: #4a4a4a; /* Dark gray color */
+    text-align: center;
+    margin: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Text area styling */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    color: #333;
+    background-color: #fff;
+    resize: none;
+}
+
+/* Button styling */
+button {
+    background-color: #1e90ff; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1c86ee; 
+}
+
+/* Spinner styling */
+.stSpinner > div {
+    border-top-color: #1e90ff;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Success message styling */
+.stAlert {
+    font-family: Arial, sans-serif;
+    color: #155724; 
+    background-color: #d4edda; 
+    border-color: #c3e6cb; 
+}
+
+/* Image caption styling */
+.stImage > div {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-top: 10px;
+}
