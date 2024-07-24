@@ -1,11 +1,71 @@
-# GitHub Profile Picture Generator 🎨
+# 📸 GitHub Profile Picture Generator
 
-Welcome to the GitHub Profile Picture Generator repository! This project allows you to create and customize your own profile picture for GitHub using SDX tools and techniques.
+![Generated Image](outputs_generated/adi.png)
+
+✨ Generate Your Custom GitHub Profile Picture! ✨
+
+## 📝 Overview
+
+This project allows you to create an anime-style GitHub profile picture that reflects your personality and passion for coding. The image generation is done using a diffusion model pipeline and a text generation model to extend the prompts.
+
+## 🌟 Features
+
+- 🎨 Generate detailed anime-style profile pictures.
+- 🔧 Customize the generation process with various parameters.
+- 💾 Save the generated images in the `outputs_generated` folder.
+
+## ⚙️ Installation
+
+### Prerequisites 📋
+
+Make sure you have the following software installed:
+
+- [Python](https://www.python.org/)
+- [Git](https://git-scm.com/)
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/aditya26062003/GitHub_Profile_Picture.git
+    cd ChatBot_WebProject
+    ```
+
+2. Install the required dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## 🚀 Usage
+
+1. Run the Streamlit app:
+
+    ```bash
+    streamlit run src/app.py
+    ```
+
+2. Open your web browser and navigate to the URL provided by Streamlit (usually `http://localhost:8501`).
+
+3. Describe your GitHub profile picture and adjust the parameters as needed.
+
+4. Click the "Generate Image" button to create your custom profile picture.
+
+5. The generated image will be displayed and saved in the `outputs_generated` folder.
+
+## 📦 Dependencies
+
+- `streamlit`
+- `torch`
+- `numpy`
+- `diffusers`
+- `transformers`
+- `Pillow`
+
 
 ## Use the Link and generate images ..
-- Lowest Quality Images : (main_SDX.py)
-- Its best if u use API as it give initial 25 credits (main.py).
-- Using CPU for generating so your image may not as good as expected using link (app.py)
+- Lowest Quality Images : (src/main_SDX.py)
+- Its best if u use API as it give initial 25 credits (src/main.py).
+- Using CPU for generating so your image may not as good as expected using link (src/app.py)
 - [RUNNING LINK](https://huggingface.co/spaces/adi2606/Profile_Pic_Generator) (using now model : stabilityai/sdxl-turbo )
 
 ## Files and Directories 📁
@@ -25,51 +85,6 @@ Welcome to the GitHub Profile Picture Generator repository! This project allows 
 ├── 📄 README.md
 └── 📄 requirements.txt
 ```
-
-## Features ✨
-
-- **Customizable Designs**: Create unique and personalized profile pictures.
-- **Easy to Use**: User-friendly interface for seamless experience.
-- **Open Source**: Contribute and enhance the project together.
-
-## Getting Started 🚀
-
-Follow these instructions to get a copy of the project up and running on your local machine.
-
-### Prerequisites 📋
-
-Make sure you have the following software installed:
-
-- [Python](https://www.python.org/)
-- [Git](https://git-scm.com/)
-
-### Installation 🛠️
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/aditya26062003/GitHub_Profile_Picture.git
-   ```
-2. **Navigate to the project directory**:
-   ```bash
-   cd GitHub_Profile_Picture
-   ```
-3. **Create a virtual environment** (optional but recommended):
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   ```
-4. **Install the dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Usage 🎨
-
-1. **Run the main script**:
-   ```bash
-   python main.py
-   ```
-2. **Check the outputs** in the `outputs_generated` directory.
 
 ## Contributing 🤝
 
