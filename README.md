@@ -118,7 +118,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact 📬
 
 - **Name**: Aditya
-- **GitHub**: [aditya26062003](https://github.com/EchoSingh)
+- **GitHub**: [EchoSingh](https://github.com/EchoSingh)
 
 ## Acknowledgements 🙌
 
