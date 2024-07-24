@@ -4,10 +4,11 @@ import numpy as np
 from diffusers import DiffusionPipeline
 from transformers import pipeline
 
+# Load text generation pipeline
 text_pipe = pipeline('text-generation', model='daspartho/prompt-extend')
 
 def extend_prompt(prompt):
-    return text_pipe(prompt + ',', num_return_sequences=1)[0]["generated_text"]
+    return text_pipe(prompt + ',', num_return_sequences=1, max_new_tokens=50)[0]["generated_text"]
 
 @st.cache_resource
 def load_pipeline(use_cuda):
@@ -25,11 +26,12 @@ def load_pipeline(use_cuda):
 
 def generate_image(prompt, use_details, steps, seed, use_cuda):
     pipe = load_pipeline(use_cuda)
-    generator = torch.manual_seed(seed) if seed != 0 else np.random.seed(0)
+    generator = torch.manual_seed(seed) if seed != 0 else torch.manual_seed(np.random.randint(0, 2**32))
     extended_prompt = extend_prompt(prompt) if use_details else prompt
-    image = pipe(prompt=extended_prompt, generator=generator, num_inference_steps=steps, guidance_scale=0.0).images[0]
+    image = pipe(prompt=extended_prompt, generator=generator, num_inference_steps=steps, guidance_scale=7.5).images[0]
     return image, extended_prompt
 
+# Custom CSS styling
 st.markdown("""
     <style>
         body {background-color: #E8F5E9;}
@@ -41,12 +43,13 @@ st.markdown("""
 st.markdown("<div class='header'>✨ Generate Your Custom GitHub Profile Picture! ✨</div>", unsafe_allow_html=True)
 st.markdown("<div class='subheader'>Create an anime-style GitHub profile picture that reflects your personality and passion for coding. 🚀👨‍💻</div>", unsafe_allow_html=True)
 
+# Input widgets
 input_text = st.text_area("Describe your GitHub profile picture:",
     "Create an anime-style GitHub profile picture for a boy. The character should have a friendly and approachable expression, embodying a sense of curiosity and enthusiasm, reflecting the qualities of a passionate coder. Incorporate elements that suggest technology or coding, such as a pair of stylish glasses, a laptop, or a background with subtle code or tech motifs. Use vibrant and appealing colors to make the profile picture stand out and convey a sense of creativity and innovation.")
 
 details_checkbox = st.checkbox("Generate Details?", value=True)
-steps_slider = st.slider("Number of Iterations", min_value=1, max_value=5, value=2, step=1)
-seed_slider = st.slider("Seed", min_value=0, max_value=9007199254740991, value=398231747038484200, step=1)
+steps_slider = st.slider("Number of Iterations", min_value=1, max_value=50, value=25, step=1)
+seed_slider = st.slider("Seed", min_value=0, max_value=9007199254740991, value=3982317, step=1) 
 cuda_checkbox = st.checkbox("Use CUDA?", value=False)
 
 if st.button("Generate Image"):
