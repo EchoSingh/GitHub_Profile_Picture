@@ -26,7 +26,7 @@ Make sure you have the following software installed:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/aditya26062003/GitHub_Profile_Picture.git
+    git clone https://github.com/EchoSingh/GitHub_Profile_Picture.git
     cd ChatBot_WebProject
     ```
 
@@ -118,7 +118,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact 📬
 
 - **Name**: Aditya
-- **GitHub**: [aditya26062003](https://github.com/aditya26062003)
+- **GitHub**: [aditya26062003](https://github.com/EchoSingh)
 
 ## Acknowledgements 🙌
 
